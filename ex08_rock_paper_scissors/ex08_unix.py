@@ -34,8 +34,7 @@ while 1:
         player2 = int(input("Player 2 selection: "))
     
         os.system('clear')
-        # Figuring out the winner
-        if player1 == 1 and player2 == 1:
+        if (player1 == 1 and player2 == 1) or (player1 == 2 and player2 == 2) or (player1 == 3 and player2 == 3):
             print("It is a TIE.")
             print("Press spacebar to continue")
             orig_settings = termios.tcgetattr(sys.stdin)
@@ -45,3 +44,82 @@ while 1:
                 x=sys.stdin.read(1)[0]
             termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
             os.system('clear')
+
+        # rock - paper
+        elif player1 == 1 and player2 == 2:
+            print("Paper smashes Rock: Player 02 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+        # rock - scissor
+        elif player1 == 1 and player2 == 3:
+            print("Rock crushes Scissor: Player 01 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+        # paper - rock
+        elif player1 == 2 and player2 == 1:
+            print("Paper smashes Rock: Player 01 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+        # paper - scissor
+        elif player1 == 2 and player2 == 3:
+            print("Scissor cuts Paper: Player 02 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+        # scissor - rock
+        elif player1 == 3 and player2 == 1:
+            print("Rock crushes Scissor: Player 02 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+        # scissor - paper
+        elif player1 == 3 and player2 == 2:
+            print("Scissor cuts Paper: Player 01 WINS!!")
+            print("Press spacebar to continue")
+            orig_settings = termios.tcgetattr(sys.stdin)
+            tty.setraw(sys.stdin)
+            x = 0
+            while x != ' ': # ESC
+                x=sys.stdin.read(1)[0]
+            termios.tcsetattr(sys.stdin, termios.TCSADRAIN, orig_settings)
+            os.system('clear')
+
+
+
+
+
+
+
