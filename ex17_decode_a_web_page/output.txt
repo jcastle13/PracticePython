@@ -1,0 +1,15 @@
+title: <article class="Story Story--large Story--stagger col-6 col-sm-3 p-2">
+<a class="Story-link d-block d-lg-flex height-full rounded-1 box-shadow-extra-large" href=" /open-source/stories/ariya ">
+<div class="col-lg-6 position-relative">
+<img alt="Ariya" class="d-block width-full" src="https://assets-cdn.github.com/images/modules/site/stories/developers/ariya.png"/>
+</div>
+<div class="d-lg-flex flex-items-center col-lg-6">
+<div class="width-full text-center p-3 py-lg-0">
+<h1 class="Story-title f2-light link-gray-dark lh-condensed mb-1">Ariya Hidayat</h1>
+<p class="f6 text-gray">
+            PhantomJS maintainer
+        </p>
+</div>
+</div>
+</a>
+</article>
